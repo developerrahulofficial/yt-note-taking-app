@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Inter";
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 90vh;
+  padding: 10px;
+  box-sizing: border-box; /* Ensure padding doesn't affect the max-height */
+  width: 100%;
+}
+
+.video-container iframe {
+  max-width: 80vw;
+  max-height: 70vh;
+  border-radius: 8px;
+  padding: 1px;
+  box-sizing: border-box;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .video-container {
+    padding: 5px;
+  }
+  .video-container iframe {
+    max-width: 70vw;
+    max-height: 60vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .video-container {
+    padding: 2px;
+  }
+  .video-container iframe {
+    max-width: 80vw;
+    max-height: 50vh;
+  }
+}
