@@ -4,7 +4,7 @@ Welcome to the YouTube Notes App! This application allows users to take and mana
 
 ## Live Application URL
 
-### https://you-tube-notes.vercel.app/
+### https://yt-note-taking-app.vercel.app/
 
 This URL has the application deployed in
 
