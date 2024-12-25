@@ -4,7 +4,7 @@ const PlayerContext = createContext();
 
 export function PlayerProvider({ children }) {
   const [player, setPlayer] = useState(null);
-  const [vidId, setVidId] = useState("z1zzcdPCqes");
+  const [vidId, setVidId] = useState(null);
 
   const onReady = (e) => {
     setPlayer(e.target);
